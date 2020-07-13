@@ -1,0 +1,22 @@
+unzip-from-s3:
+  name: unzip-from-s3
+  description: Unzip files in S3
+  runtime: nodejs12.x
+  handler: src/unzip-files.handler
+  memorySize: 1024
+  timeout: 900
+  events:
+    - s3:
+        bucket: NameOfYourBucket
+        event: s3:ObjectCreated:*
+        rules:
+          - prefix: upload-folder
+          - suffix: .zip
+        existing: true
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:*
+      Resource:
+        - arn:aws:s3:::*
+    - Effect: Allow

@@ -1,0 +1,14 @@
+{
+  "name": "unzip-from-s3",
+  "version": "1.0.0",
+  "description": "unzip from s3",
+  "main": "index.js",
+  "repository": "git@github.com:camassucato/unzip-from-s3.git",
+  "author": "camassucato <c.a.massucato@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "aws-sdk": "^2.713.0",
+    "yauzl": "^2.10.0"
+  }
+}
