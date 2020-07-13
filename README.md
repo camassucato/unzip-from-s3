@@ -14,7 +14,7 @@ yarn
 <br>
 
 ## SERVERLESS
-* Create your own serverles.yml (to deploy your functions on AWS Lambda)
+* Create your own serverless.yml (to deploy your functions on AWS Lambda)
 
 ## Author
 👤 **Carlos Augusto Massucato**
